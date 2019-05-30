@@ -1,0 +1,57 @@
+.tile {
+    width: 16px;
+    height: 16px;
+    float: left;
+    background: url('./Tile.png') no-repeat;
+    background-position: 0 -23px;
+    &--covered {
+        background-position: 0 -39px;
+    }
+    &--checked {
+        background-position: 0 -23px;
+        &-1 {
+            background-position: -16px -23px;
+        }
+        &-2 {
+            background-position: -32px -23px;
+        }
+        &-3 {
+            background-position: -48px -23px;
+        }
+        &-4 {
+            background-position: -64px -23px;
+        }
+        &-5 {
+            background-position: -80px -23px;
+        }
+        &-6 {
+            background-position: -96px -23px;
+        }
+        &-7 {
+            background-position: -112px -23px;
+        }
+        &-8 {
+            background-position: -128px -23px;
+        }
+        &-hit {
+            background-position: -32px -39px;
+        }
+    }
+    &--mine {
+        background-position: -64px -39px;
+
+        &-hit {
+            background-position: -32px -39px;
+        }
+    }
+
+    &--flagged {
+        background-position: -16px -39px;
+        &-wrong {
+            background-position: -48px -39px !important;
+        }
+    }
+    &--question {
+        background-position: -80px -39px;
+    }
+}
